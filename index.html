@@ -1,12 +1,36 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louis Lynx | Home</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Louis Lynx: Your go-to website for social media trends, viral content, and English Premier League updates. Stay updated with the latest news, videos, and tips.">
+    <meta name="keywords" content="Louis Lynx, social media trends, viral videos, TikTok, Instagram, Premier League, football updates, football transfers">
+    <meta name="author" content="Louis Lynx">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="oxIQkxOpkc03tiKIt2ZJXSvvxxrl3DpE43y8LNZgJa4" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Louis Lynx | Home">
+    <meta property="og:description" content="Stay updated with viral social media trends and the latest Premier League news on Louis Lynx website.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://www.louisproug.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Louis Lynx | Home">
+    <meta name="twitter:description" content="Stay updated with viral social media trends and the latest Premier League news on Louis Lynx website.">
+    <meta name="twitter:image" content="profile.jpg">
+
+    <!-- Styles and Scripts -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-</head><meta name="google-site-verification" content="oxIQkxOpkc03tiKIt2ZJXSvvxxrl3DpE43y8LNZgJa4" />
+</head>
 <body>
     <!-- Navigation -->
     <header>
@@ -20,40 +44,72 @@
                 <li><a href="speak-to-us.html">Speak to Us</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@louis_lynx1" target="_blank" rel="noopener">
+                    <img src="tiktok-icon.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/louis-lynx1" target="_blank" rel="noopener">
+                    <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@louisprougandaofficial" target="_blank" rel="noopener">
+                    <img src="youtube-icon.png" alt="YouTube" class="social-icon">
+                </a>
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="profile.jpg" alt="Louis Lynx Profile" class="profile-pic">
-        <h2>Welcome to Louis Lynx Website!</h2>
-        <p>Your go-to place for social media trends, football updates, and much more!</p>
-        <a href="social-media-trends.html" class="btn">See Trending Now</a>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section (only on Home page) -->
+        <section class="hero">
+            <img src="profile.jpg" alt="Louis Lynx Profile" class="profile-pic">
+            <h2>Welcome to Louis Lynx Website!</h2>
+            <p>Your go-to place for social media trends, football updates, and much more!</p>
+            <a href="social-media-trends.html" class="btn">See Trending Now</a>
+        </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature-card" style="background:#FF5733;">
-            <h3>Social Media Trends</h3>
-            <p>Viral challenges, short-form videos, AI-generated content, and platform updates.</p>
-            <a href="social-media-trends.html" class="btn-small">Explore</a>
-        </div>
-        <div class="feature-card" style="background:#33C1FF;">
-            <h3>Premier League Updates</h3>
-            <p>Latest transfers, match fixtures, and club updates from the English Premier League.</p>
-            <a href="premier-league.html" class="btn-small">View Updates</a>
-        </div>
-        <div class="feature-card" style="background:#FFDD33;">
-            <h3>Contact Me</h3>
-            <p>Have questions or ideas? Send me a message and I’ll get back to you!</p>
-            <a href="speak-to-us.html" class="btn-small">Talk to Me</a>
-        </div>
-    </section>
+        <!-- Page-specific content goes here -->
+        <!-- Example: Features Section -->
+        <section class="features">
+            <div class="feature-card" style="background:#FF5733;">
+                <h3>Social Media Trends</h3>
+                <p>Viral challenges, short-form videos, AI-generated content, and platform updates.</p>
+                <a href="social-media-trends.html" class="btn-small">Explore</a>
+            </div>
+            <div class="feature-card" style="background:#33C1FF;">
+                <h3>Premier League Updates</h3>
+                <p>Latest transfers, match fixtures, and club updates from the English Premier League.</p>
+                <a href="premier-league.html" class="btn-small">View Updates</a>
+            </div>
+            <div class="feature-card" style="background:#FFDD33;">
+                <h3>Contact Me</h3>
+                <p>Have questions or ideas? Send me a message and I’ll get back to you!</p>
+                <a href="speak-to-us.html" class="btn-small">Talk to Me</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>© 2025 Louis Lynx | All Rights Reserved</p>
     </footer>
+
+    <!-- Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Louis Lynx",
+      "url": "https://www.louisproug.com/",
+      "sameAs": [
+        "https://www.instagram.com/louis-lynx1",
+        "https://www.tiktok.com/@louis_lynx1",
+        "https://www.youtube.com/@louisprougandaofficial"
+      ],
+      "jobTitle": "Social Media & Football Content Creator",
+      "image": "https://www.louisproug.com/profile.jpg",
+      "description": "Louis Lynx shares the latest social media trends and English Premier League updates."
+    }
+    </script>
 </body>
 </html>
-
