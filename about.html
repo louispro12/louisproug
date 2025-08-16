@@ -1,52 +1,167 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Louis Lynx</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Louis Lynx</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #111;
+      color: #fff;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-links li a:hover {
+      color: #ff0050;
+    }
+
+    /* TikTok logo */
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    /* About section */
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+      min-height: 100vh;
+    }
+    .about-container {
+      max-width: 800px;
+      text-align: center;
+      animation: fadeInUp 1.2s ease;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff0050;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #111;
+      transform: translateY(-3px);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Louis Lynx</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Me</a></li>
-                <li><a href="social-media-trends.html">Social Media Trends</a></li>
-                <li><a href="premier-league.html">Premier League Updates</a></li>
-                <li><a href="speak-to-us.html">Speak to Us</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Louis Lynx</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="social-media-trends.html">Social Media Trends</a></li>
+        <li><a href="premier-league.html">Premier League Updates</a></li>
+        <li><a href="speak-to-us.html">Speak to Us</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@louis_lynx1" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok Logo">
+        </a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- About Me Section -->
-    <section class="about-section">
-        <div class="about-container">
-            <img src="images/profile.jpg" alt="Louis Lynx" class="profile-img">
-            <h2>About Me</h2>
-            <p>
-                My name is <strong>Mulinde Louis</strong>, a proud student of <strong>Kisubi Mapeera SS</strong>.  
-                I recently completed my Primary Seven in 2023 at <strong>St. Savio Kisubi Junior School</strong>.
-            </p>
-            <p>
-                I am a passionate <strong>content creator</strong> and <strong>social media specialist</strong>,  
-                focusing on creative trends, football updates, and digital engagement.
-            </p>
-            <p>
-                Follow me on my journey as I share the latest viral trends,  
-                Premier League news, and content strategies.
-            </p>
-            <a href="social-media-trends.html" class="btn">Explore Trends</a>
-        </div>
-    </section>
+  <!-- About Me Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <img src="images/profile.jpg" alt="Louis Lynx" class="profile-img">
+      <h2>About Me</h2>
+      <p>
+        My name is <strong>Mulinde Louis</strong>, a proud student of <strong>Kisubi Mapeera SS</strong>. 
+        I recently completed my Primary Seven in 2023 at <strong>St. Savio Kisubi Junior School</strong>.
+      </p>
+      <p>
+        I am a passionate <strong>content creator</strong> and <strong>social media specialist</strong>, 
+        focusing on creative trends, football updates, and digital engagement.
+      </p>
+      <p>
+        Follow me on my journey as I share the latest viral trends, 
+        Premier League news, and content strategies.
+      </p>
+      <a href="social-media-trends.html" class="btn">Explore Trends</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Louis Lynx | All Rights Reserved</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Louis Lynx | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
