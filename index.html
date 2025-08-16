@@ -10,97 +10,33 @@
 <meta name="robots" content="index, follow">
 
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 <style>
-/* Quick style updates */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  padding: 10px 20px;
-}
-.navbar .logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li {
-  margin: 0 10px;
-}
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-.nav-links a.active, .nav-links a:hover {
-  color: #ffdd33;
-}
-.social-icons a {
-  margin-left: 10px;
-}
 .hero {
+  background-color: #333; /* Original dark background */
+  color: #fff; /* Make text visible */
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f0f0f0;
-}
-.hero .profile-pic {
-  width: 150px;
-  border-radius: 50%;
+  padding: 50px 20px;
 }
 .hero h2 {
-  margin: 20px 0 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px 0;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
-.feature-card {
-  width: 250px;
-  margin: 10px;
-  padding: 20px;
+.btn {
+  background-color: #FF5733;
   color: #fff;
-  border-radius: 10px;
-  text-align: center;
-}
-.feature-card h3 {
-  margin-bottom: 10px;
-}
-.btn, .btn-small {
-  display: inline-block;
-  padding: 8px 15px;
-  margin-top: 10px;
-  color: #222;
-  background-color: #ffdd33;
+  padding: 10px 25px;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 8px;
 }
-.btn-small {
-  padding: 5px 10px;
-  font-size: 0.9em;
-}
-footer {
-  text-align: center;
-  padding: 15px 0;
-  background-color: #222;
-  color: #fff;
-  margin-top: 30px;
+.btn:hover {
+  background-color: #e04e2f;
 }
 </style>
-<script src="script.js" defer></script>
 </head>
 <body>
 <header>
@@ -121,7 +57,6 @@ footer {
       <path d="M128,0C57.31,0,0,57.31,0,128S57.31,256,128,256,256,198.69,256,128,198.69,0,128,0Zm41.19,160.67a56.17,56.17,0,0,1-41.19-16.69V160A56.22,56.22,0,1,1,128,72v24.36a80.18,80.18,0,1,0,41.19,64.31Z"/>
     </svg>
   </a>
-
   <!-- Instagram -->
   <a href="https://www.instagram.com/Louis_lynx1" target="_blank" rel="noopener" aria-label="Instagram">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" fill="#F58529">
@@ -130,7 +65,6 @@ footer {
       <circle cx="396" cy="116" r="20"/>
     </svg>
   </a>
-
   <!-- YouTube -->
   <a href="https://www.youtube.com/@louisprougandaofficial" target="_blank" rel="noopener" aria-label="YouTube">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 576 512" fill="#FF0000">
@@ -156,8 +90,8 @@ footer {
 </div>
 <div class="feature-card" style="background:#33C1FF;">
 <h3>Premier League Updates</h3>
-<p>Latest standings, transfers, and match results from the English Premier League.</p>
-<a href="premier-league.html" class="btn-small">View Table</a>
+<p>Latest transfers, match fixtures, and club updates from the English Premier League.</p>
+<a href="premier-league.html" class="btn-small">View Updates</a>
 </div>
 <div class="feature-card" style="background:#FFDD33;">
 <h3>Contact Me</h3>
@@ -169,5 +103,22 @@ footer {
 <footer>
 <p>© 2025 Louis Lynx | All Rights Reserved</p>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Louis Lynx",
+  "url": "https://www.louisproug.com/",
+  "sameAs": [
+    "https://www.instagram.com/Louis_lynx1",
+    "https://www.tiktok.com/@louis_lynx1",
+    "https://www.youtube.com/@louisprougandaofficial"
+  ],
+  "jobTitle": "Social Media & Football Content Creator",
+  "image": "https://www.louisproug.com/profile.jpg",
+  "description": "Louis Lynx shares the latest social media trends and English Premier League updates."
+}
+</script>
 </body>
 </html>
