@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -39,20 +39,22 @@
       color: #ff0050;
     }
 
-    /* TikTok logo */
+    /* Social Icons */
     .social-icons {
       display: flex;
       align-items: center;
       gap: 15px;
     }
-    .social-icons img {
+    .social-icons svg {
       width: 28px;
       height: 28px;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, fill 0.3s ease;
+      fill: white;
     }
-    .social-icons img:hover {
+    .social-icons svg:hover {
       transform: scale(1.2);
+      fill: #ff0050;
     }
 
     /* About section */
@@ -131,9 +133,15 @@
         <li><a href="contacts.html">Contacts</a></li>
       </ul>
       <div class="social-icons">
-        <a href="https://www.tiktok.com/@louis_lynx1" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok Logo">
+        <!-- TikTok Logo -->
+        <a href="https://www.tiktok.com/@louis_lynx1" target="_blank" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <path d="M232 92a92 92 0 0 1-92-92h44a48 48 0 0 0 48 48v44z" fill="#25F4EE"/>
+            <path d="M184 0h-44v170a42 42 0 1 1-42-42V84a86 86 0 1 0 86 86V0z" fill="#FE2C55"/>
+            <path d="M184 0h-44v170a42 42 0 1 1-42-42V84a86 86 0 1 0 86 86V0z" fill="#000"/>
+          </svg>
         </a>
+        <!-- (Optional: Add Instagram & YouTube later here) -->
       </div>
     </nav>
   </header>
@@ -165,3 +173,5 @@
   </footer>
 </body>
 </html>
+
+
