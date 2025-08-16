@@ -1,154 +1,93 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League Updates - Louis Lynx</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier League Table | Louis Lynx</title>
+<meta name="description" content="Current English Premier League standings with upcoming fixtures.">
+<meta name="keywords" content="Premier League, Football, EPL, Standings, Louis Lynx">
+<meta name="author" content="Louis Lynx">
+<link rel="stylesheet" href="style.css">
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.team-logo {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Louis Lynx</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="social-media-trends.html">Social Media Trends</a></li>
-                <li><a href="premier-league.html" class="active">Premier League Updates</a></li>
-                <li><a href="speak-to-us.html">Speak to Us</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<nav class="navbar">
+<h1 class="logo">Louis Lynx</h1>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="social-media-trends.html">Social Media Trends</a></li>
+<li><a href="premier-league.html" class="active">Premier League Updates</a></li>
+<li><a href="speak-to-us.html">Speak to Us</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+</ul>
+</nav>
+</header>
 
-    <section class="content-section">
-        <div class="content-container">
-            <h2>Premier League Transfers 2025</h2>
+<main>
+<section class="premier-league-table">
+<h2>English Premier League Standings</h2>
+<table>
+<thead>
+<tr>
+<th>Pos</th>
+<th>Team</th>
+<th>Pl</th>
+<th>W</th>
+<th>D</th>
+<th>L</th>
+<th>GF</th>
+<th>GA</th>
+<th>GD</th>
+<th>Pts</th>
+<th>Next</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td><img class="team-logo" src="https://crests.football-data.org/64.png" alt="Liverpool">Liverpool</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>2</td><td>2</td><td>3</td><td>Newcastle United</td></tr>
+<tr><td>2</td><td><img class="team-logo" src="https://crests.football-data.org/66.png" alt="Aston Villa">Aston Villa</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Brentford</td></tr>
+<tr><td>3</td><td><img class="team-logo" src="https://crests.football-data.org/67.png" alt="Newcastle United">Newcastle United</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Liverpool</td></tr>
+<tr><td>4</td><td><img class="team-logo" src="https://crests.football-data.org/57.png" alt="Arsenal">Arsenal</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Manchester United</td></tr>
+<tr><td>5</td><td><img class="team-logo" src="https://crests.football-data.org/71.png" alt="Brentford">Brentford</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Nottingham Forest</td></tr>
+<tr><td>6</td><td><img class="team-logo" src="https://crests.football-data.org/397.png" alt="Brighton & Hove Albion">Brighton & Hove Albion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Fulham</td></tr>
+<tr><td>7</td><td><img class="team-logo" src="https://crests.football-data.org/328.png" alt="Burnley">Burnley</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Tottenham Hotspur</td></tr>
+<tr><td>8</td><td><img class="team-logo" src="https://crests.football-data.org/61.png" alt="Chelsea">Chelsea</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Crystal Palace</td></tr>
+<tr><td>9</td><td><img class="team-logo" src="https://crests.football-data.org/354.png" alt="Crystal Palace">Crystal Palace</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Chelsea</td></tr>
+<tr><td>10</td><td><img class="team-logo" src="https://crests.football-data.org/62.png" alt="Everton">Everton</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Leeds United</td></tr>
+<tr><td>11</td><td><img class="team-logo" src="https://crests.football-data.org/384.png" alt="Fulham">Fulham</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Brighton & Hove Albion</td></tr>
+<tr><td>12</td><td><img class="team-logo" src="https://crests.football-data.org/341.png" alt="Leeds United">Leeds United</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Everton</td></tr>
+<tr><td>13</td><td><img class="team-logo" src="https://crests.football-data.org/65.png" alt="Manchester City">Manchester City</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Wolverhampton Wanderers</td></tr>
+<tr><td>14</td><td><img class="team-logo" src="https://crests.football-data.org/66.png" alt="Manchester United">Manchester United</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Arsenal</td></tr>
+<tr><td>15</td><td><img class="team-logo" src="https://crests.football-data.org/71.png" alt="Nottingham Forest">Nottingham Forest</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Brentford</td></tr>
+<tr><td>16</td><td><img class="team-logo" src="https://crests.football-data.org/397.png" alt="Sunderland">Sunderland</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>West Ham United</td></tr>
+<tr><td>17</td><td><img class="team-logo" src="https://crests.football-data.org/328.png" alt="Tottenham Hotspur">Tottenham Hotspur</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Burnley</td></tr>
+<tr><td>18</td><td><img class="team-logo" src="https://crests.football-data.org/563.png" alt="West Ham United">West Ham United</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Sunderland</td></tr>
+<tr><td>19</td><td><img class="team-logo" src="https://crests.football-data.org/229.png" alt="Wolverhampton Wanderers">Wolverhampton Wanderers</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Manchester City</td></tr>
+<tr><td>20</td><td><img class="team-logo" src="https://crests.football-data.org/1044.png" alt="Bournemouth">Bournemouth</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>4</td><td>-2</td><td>0</td><td>Wolverhampton Wanderers</td></tr>
+</tbody>
+</table>
+</section>
+</main>
 
-            <!-- Arsenal -->
-            <div class="club-header" style="background:#EF0107; color:white;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal Logo" class="club-logo">
-                Arsenal
-            </div>
-            <table class="club-table">
-                <thead>
-                    <tr><th>Incomings</th><th>Fee</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Eberechi Eze (Crystal Palace)</td><td>£30m</td></tr>
-                    <tr><td>Viktor Gyokeres (Sporting Lisbon)</td><td>£64m</td></tr>
-                    <tr><td>Martin Zubimendi (Real Sociedad)</td><td>£56m</td></tr>
-                    <tr><td>Noni Madueke (Chelsea)</td><td>£48.5m</td></tr>
-                </tbody>
-            </table>
-            <table class="club-table">
-                <thead>
-                    <tr><th>Outgoings</th><th>Fee</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Kepa Arrizabalaga</td><td>£5m</td></tr>
-                    <tr><td>Nuno Tavares</td><td>£6.5m</td></tr>
-                </tbody>
-            </table>
-
-            <!-- Liverpool -->
-            <div class="club-header" style="background:#00A859; color:white;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool Logo" class="club-logo">
-                Liverpool
-            </div>
-            <table class="club-table">
-                <thead>
-                    <tr><th>Incomings</th><th>Fee</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Florian Wirtz (Bayer Leverkusen)</td><td>£116m</td></tr>
-                    <tr><td>Jeremie Frimpong (Bayer Leverkusen)</td><td>£29.5m</td></tr>
-                </tbody>
-            </table>
-            <table class="club-table">
-                <thead>
-                    <tr><th>Outgoings</th><th>Fee</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Luis Díaz</td><td>£65.5m</td></tr>
-                    <tr><td>Darwin Núñez</td><td>£46m</td></tr>
-                </tbody>
-            </table>
-
-            <!-- Manchester United -->
-            <div class="club-header" style="background:#DA291C; color:white;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Man United Logo" class="club-logo">
-                Manchester United
-            </div>
-            <table class="club-table">
-                <thead><tr><th>Incomings</th><th>Fee</th></tr></thead>
-                <tbody>
-                    <tr><td>Bryan Mbeumo (Brentford)</td><td>£71m</td></tr>
-                    <tr><td>Matheus Cunha (Wolves)</td><td>£62.5m</td></tr>
-                </tbody>
-            </table>
-            <table class="club-table">
-                <thead><tr><th>Outgoings</th><th>Fee</th></tr></thead>
-                <tbody>
-                    <tr><td>Christian Eriksen</td><td>Released</td></tr>
-                </tbody>
-            </table>
-
-            <!-- Chelsea -->
-            <div class="club-header" style="background:#034694; color:white;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="club-logo">
-                Chelsea
-            </div>
-            <table class="club-table">
-                <thead><tr><th>Incomings</th><th>Fee</th></tr></thead>
-                <tbody>
-                    <tr><td>João Pedro (Brighton)</td><td>£55m</td></tr>
-                    <tr><td>Estevão (Palmeiras)</td><td>£28.5m</td></tr>
-                    <tr><td>Liam Delap (Ipswich)</td><td>£30m</td></tr>
-                </tbody>
-            </table>
-            <table class="club-table">
-                <thead><tr><th>Outgoings</th><th>Fee</th></tr></thead>
-                <tbody>
-                    <tr><td>Kepa Arrizabalaga</td><td>£5m</td></tr>
-                    <tr><td>Noni Madueke</td><td>£48.5m</td></tr>
-                </tbody>
-            </table>
-
-            <!-- Fixtures Section -->
-            <h2>Fixtures</h2>
-            <div class="fixtures">
-                <h3>Matchweek 1</h3>
-                <ul>
-                    <li>Fri, Aug 15: Liverpool 4-2 AFC Bournemouth - passed</li>
-                    <li>Sat, Aug 16: Aston Villa vs Newcastle United - live</li>
-                    <li>Sat, Aug 16: Brighton & Hove Albion vs Fulham - 3:00 PM EAT</li>
-                    <li>Sun, Aug 17: Chelsea vs Crystal Palace - 2:00 PM EAT</li>
-                    <li>Sun, Aug 17: Manchester United vs Arsenal - 4:30 PM EAT</li>
-                </ul>
-
-                <h3>Matchweek 2</h3>
-                <ul>
-                    <li>Fri, Aug 22: West Ham vs Chelsea - 8:00 PM EAT</li>
-                    <li>Sat, Aug 23: Manchester City vs Tottenham - 2:30 PM EAT</li>
-                    <li>Sun, Aug 24: Everton vs Brighton - 2:00 PM EAT</li>
-                </ul>
-
-                <h3>Matchweek 3</h3>
-                <ul>
-                    <li>Fri, Aug 29: Aston Villa vs Crystal Palace - 8:00 PM EAT</li>
-                    <li>Sat, Aug 30: Chelsea vs Fulham - 2:30 PM EAT</li>
-                    <li>Sun, Aug 31: Liverpool vs Arsenal - 4:30 PM EAT</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Louis Lynx | All Rights Reserved</p>
-    </footer>
+<footer>
+<p>© 2025 Louis Lynx | All Rights Reserved</p>
+</footer>
 </body>
 </html>
-
