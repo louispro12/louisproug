@@ -104,18 +104,20 @@ th, td {
 </footer>
 
 <script>
-// Load data from local JSON
+// Fetch Premier League JSON and update table
 async function fetchPLTable() {
   try {
-    const response = await fetch('pl-data.json');
+    const response = await fetch(`pl-data.json?cache=${Date.now()}`); // cache-buster
+    if (!response.ok) throw new Error('Failed to fetch JSON');
     const data = await response.json();
+
     const tableBody = document.querySelector("#pl-table tbody");
     tableBody.innerHTML = "";
 
     data.standings.forEach(team => {
       const tr = document.createElement("tr");
 
-      // Create form badges
+      // Form badges
       let formHtml = '';
       team.form.split('').forEach(f => {
         const cls = f === 'W' ? 'form-W' : f === 'D' ? 'form-D' : 'form-L';
