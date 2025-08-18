@@ -52,16 +52,24 @@ th, td {
 .stats-button:hover {
   background-color: #e04e2f;
 }
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #111;
+.form-badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
   color: #fff;
-  margin-top: 20px;
+  font-weight: bold;
+  margin: 0 1px;
+  font-size: 12px;
 }
+.form-W { background: #28a745; }
+.form-D { background: #ffc107; color: #000; }
+.form-L { background: #dc3545; }
 </style>
 </head>
 <body>
+
 <header>
   <h1>English Premier League Standings</h1>
   <a href="2025_26_Player_Stats.html" class="stats-button">Player Statistics</a>
@@ -96,33 +104,27 @@ footer {
 </footer>
 
 <script>
-// ✅ Replace with your RapidAPI key
-const API_KEY = 'YOUR_RAPIDAPI_KEY';
-const url = 'https://free-football-soccer-v1.p.rapidapi.com/api/v1/standings?league=39&season=2025';
-
+// Load data from local JSON
 async function fetchPLTable() {
   try {
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Host': 'free-football-soccer-v1.p.rapidapi.com',
-        'X-RapidAPI-Key': API_KEY
-      }
-    });
-
-    if (!response.ok) throw new Error('Network response not ok');
+    const response = await fetch('pl-data.json');
     const data = await response.json();
+    const tableBody = document.querySelector("#pl-table tbody");
+    tableBody.innerHTML = "";
 
-    const tableBody = document.querySelector('#pl-table tbody');
-    tableBody.innerHTML = '';
+    data.standings.forEach(team => {
+      const tr = document.createElement("tr");
 
-    const standings = data.standings[0].table;
+      // Create form badges
+      let formHtml = '';
+      team.form.split('').forEach(f => {
+        const cls = f === 'W' ? 'form-W' : f === 'D' ? 'form-D' : 'form-L';
+        formHtml += `<span class="form-badge ${cls}">${f}</span>`;
+      });
 
-    standings.forEach(team => {
-      const tr = document.createElement('tr');
       tr.innerHTML = `
         <td>${team.position}</td>
-        <td><img class="team-logo" src="${team.team.crestUrl}" alt="${team.team.name}">${team.team.name}</td>
+        <td><img class="team-logo" src="${team.team.crestUrl}" alt="${team.team.name}"> ${team.team.name}</td>
         <td>${team.playedGames}</td>
         <td>${team.won}</td>
         <td>${team.draw}</td>
@@ -131,21 +133,20 @@ async function fetchPLTable() {
         <td>${team.goalsAgainst}</td>
         <td>${team.goalDifference}</td>
         <td>${team.points}</td>
-        <td>${team.form || '-'}</td>
+        <td>${formHtml}</td>
       `;
       tableBody.appendChild(tr);
     });
-  } catch (err) {
-    console.error('Error fetching Premier League table:', err);
-    document.querySelector('#pl-table tbody').innerHTML = '<tr><td colspan="11">Failed to load data. Try again later.</td></tr>';
+
+  } catch(err) {
+    console.error(err);
+    document.querySelector("#pl-table tbody").innerHTML = `<tr><td colspan="11">Failed to load data. Try again later.</td></tr>`;
   }
 }
 
-// Load table on page load
+// Fetch table on page load
 fetchPLTable();
-
-// Refresh every 5 minutes
-setInterval(fetchPLTable, 300000);
 </script>
+
 </body>
 </html>
