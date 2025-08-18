@@ -1,3 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025/26 Premier League Player Stats | Louis Lynx</title>
+<style>
+    /* Global Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0b1d3a; /* Dark Navy */
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-color: #142850; /* Slightly lighter navy */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: #ffcc00; /* Gold accent */
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+        margin: 0;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-50px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .stats-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    h2 {
+        color: #ffcc00;
+        text-align: center;
+        margin-bottom: 1rem;
+        animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .stats-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 3rem;
+        background-color: #1e2d4b; /* Dark gray-blue */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        transform: translateY(50px);
+        opacity: 0;
+        animation: fadeUp 1s forwards;
+    }
+
+    @keyframes fadeUp {
+        0% { opacity: 0; transform: translateY(50px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .stats-table th, .stats-table td {
+        padding: 0.75rem 1rem;
+        text-align: center;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .stats-table thead {
+        background-color: #ffcc00;
+        color: #0b1d3a;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .stats-table tbody tr {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .stats-table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.02);
+    }
+
+    .button-link {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        margin: 2rem auto;
+        text-decoration: none;
+        color: #0b1d3a;
+        background-color: #ffcc00;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: block;
+        width: fit-content;
+    }
+
+    .button-link:hover {
+        background-color: #e6b800;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: #142850;
+        color: #ffcc00;
+        box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
+    }
+</style>
+</head>
+<body>
+
 <header>
 <h1>2025/26 Premier League Player Stats</h1>
 </header>
@@ -94,3 +222,24 @@
 <footer>
 <p>© 2025 Louis Lynx | All Rights Reserved</p>
 </footer>
+
+<script>
+    // Scroll fade-in animation
+    const tables = document.querySelectorAll('.stats-table');
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.8s ease-out';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    tables.forEach(table => observer.observe(table));
+</script>
+
+</body>
+</html>
