@@ -52,6 +52,13 @@ th, td {
 .stats-button:hover {
   background-color: #e04e2f;
 }
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  margin-top: 20px;
+}
 </style>
 </head>
 <body>
@@ -75,7 +82,7 @@ th, td {
       <th>GA</th>
       <th>GD</th>
       <th>Pts</th>
-      <th>Next</th>
+      <th>Form</th>
     </tr>
   </thead>
   <tbody>
@@ -92,7 +99,6 @@ th, td {
 // Your football-data.org API token
 const API_TOKEN = "dd4ad8d9021a4b9a9c0f5fa107f5eb8c";
 
-// Function to fetch the Premier League table
 async function fetchPLTable() {
   const url = "https://api.football-data.org/v4/competitions/PL/standings";
   try {
@@ -101,18 +107,19 @@ async function fetchPLTable() {
     });
     if (!response.ok) throw new Error("Network response not ok");
     const data = await response.json();
-    
+
     const tableBody = document.querySelector("#pl-table tbody");
     tableBody.innerHTML = "";
 
-    // Only use the first standings group (league table)
     const standings = data.standings[0].table;
 
     standings.forEach(team => {
+      // Force HTTPS for team logo
+      const logoUrl = team.team.crest?.replace(/^http:\/\//i, "https://") || "";
       const tr = document.createElement("tr");
       tr.innerHTML = `
         <td>${team.position}</td>
-        <td><img class="team-logo" src="${team.team.crest}" alt="${team.team.name}">${team.team.name}</td>
+        <td><img class="team-logo" src="${logoUrl}" alt="${team.team.name}">${team.team.name}</td>
         <td>${team.playedGames}</td>
         <td>${team.won}</td>
         <td>${team.draw}</td>
@@ -135,7 +142,7 @@ async function fetchPLTable() {
 // Fetch table on page load
 fetchPLTable();
 
-// Optional: Refresh every 5 minutes
+// Refresh every 5 minutes
 setInterval(fetchPLTable, 300000);
 </script>
 </body>
