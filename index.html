@@ -1,229 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Louis Lynx | Home</title>
-<meta name="description" content="Louis Lynx: Your go-to website for social media trends, viral content, Afro songs, and English Premier League updates.">
-<meta name="keywords" content="Louis Lynx, social media trends, viral videos, TikTok, Instagram, Afro songs, Premier League, football updates, football transfers">
-<meta name="author" content="Louis Lynx">
-<meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Lynx - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
-<link rel="stylesheet" href="style.css">
+  <!-- FAVICONS -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-<style>
-.hero {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.btn {
-  background-color: #FF5733;
-  color: #fff;
-  padding: 10px 25px;
-  text-decoration: none;
-  border-radius: 8px;
-}
-.btn:hover {
-  background-color: #e04e2f;
-}
-.feature-card {
-  padding: 20px;
-  margin: 15px;
-  border-radius: 12px;
-  color: #fff;
-}
-.btn-small {
-  background-color: #000;
-  color: #fff;
-  padding: 8px 18px;
-  text-decoration: none;
-  border-radius: 6px;
-}
-.btn-small:hover {
-  background-color: #333;
-}
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Louis Lynx - Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.louisproug.com/index.html">
+  <meta property="og:image" content="https://www.louisproug.com/profile.jpg">
+  <meta property="og:description" content="Welcome to Louis Lynx's official website.">
 
-/* Premier League Table */
-#pl-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 30px 0;
-}
-#pl-table th, #pl-table td {
-  padding: 8px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-.team-logo {
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-</style>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Louis Lynx - Home">
+  <meta name="twitter:description" content="Welcome to Louis Lynx's official website.">
+  <meta name="twitter:image" content="https://www.louisproug.com/profile.jpg">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Louis Lynx",
+    "url": "https://www.louisproug.com/index.html",
+    "image": "https://www.louisproug.com/profile.jpg",
+    "jobTitle": "Content Creator & Social Media Specialist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Louis Lynx Media"
+    }
+  }
+  </script>
 </head>
 <body>
-<header>
-<nav class="navbar">
-<h1 class="logo">Louis Lynx</h1>
-<ul class="nav-links">
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="social-media-trends.html">Social Media Trends</a></li>
-<li><a href="premier-league.html">Premier League Updates</a></li>
-<li><a href="new_afro_songs.html">New Afro Songs</a></li>
-<li><a href="speak-to-us.html">Speak to Us</a></li>
-<li><a href="contacts.html">Contacts</a></li>
-<li><a href="fight-night-round3-download.html">PPSSPP Game Download</a></li>
-</ul>
-<div class="social-icons">
-<!-- TikTok -->
-<a href="https://www.tiktok.com/@louis_lynx1" target="_blank" rel="noopener" aria-label="TikTok">
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256" fill="#000000">
-    <path d="M128,0C57.31,0,0,57.31,0,128S57.31,256,128,256,256,198.69,256,128,198.69,0,128,0Zm41.19,160.67a56.17,56.17,0,0,1-41.19-16.69V160A56.22,56.22,0,1,1,128,72v24.36a80.18,80.18,0,1,0,41.19,64.31Z"/>
-  </svg>
-</a>
-<!-- Instagram -->
-<a href="https://www.instagram.com/Louis_lynx1" target="_blank" rel="noopener" aria-label="Instagram">
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" fill="#F58529">
-    <path d="M349.33 69.33H162.67C100.4 69.33 54.67 115.07 54.67 177.33v186.67c0 62.27 45.73 108 108 108h186.67c62.27 0 108-45.73 108-108V177.33c0-62.27-45.73-108-108-108zm72 294.67c0 39.71-32.29 72-72 72H162.67c-39.71 0-72-32.29-72-72V177.33c0-39.71 32.29-72 72-72h186.67c39.71 0 72 32.29 72 72v186.67z"/>
-    <circle cx="256" cy="256" r="80"/>
-    <circle cx="396" cy="116" r="20"/>
-  </svg>
-</a>
-<!-- YouTube -->
-<a href="https://www.youtube.com/@louisprougandaofficial" target="_blank" rel="noopener" aria-label="YouTube">
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 576 512" fill="#FF0000">
-    <path d="M549.655 124.083c-6.281-23.691-24.822-42.203-48.538-48.512C456.747 64 288 64 288 64S119.253 64 74.883 75.571c-23.716 6.309-42.257 24.821-48.538 48.512C16 168.41 16 256 16 256s0 87.59 10.345 131.917c6.281 23.691 24.822 42.203 48.538 48.512C119.253 448 288 448 288 448s168.747 0 213.117-11.571c23.716-6.309 42.257-24.821 48.538-48.512C560 343.59 560 256 560 256s0-87.59-10.345-131.917zM232 336V176l142 80-142 80z"/>
-  </svg>
-</a>
-</div>
-</nav>
-</header>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Louis Lynx</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="social-media-trends.html">Social Media Trends</a></li>
+        <li><a href="premier-league.html">Premier League Updates</a></li>
+        <li><a href="speak-to-us.html">Speak to Us</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="fight-night-round3-download.html">PPSSPP Game Download</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="hero">
-<img src="profile.jpg" alt="Louis Lynx Profile" class="profile-pic">
-<h2>Welcome to Louis Lynx Website!</h2>
-<p>Your go-to place for social media trends, Afro music updates, and football news!</p>
-<a href="social-media-trends.html" class="btn">See Trending Now</a>
-</section>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <img src="profile.jpg" alt="Louis Lynx" class="profile-img">
+      <h2>Welcome to Louis Lynx's Official Website</h2>
+      <p>
+        Discover the latest viral trends, football updates, and content creation strategies. 
+        I’m <strong>Mulinde Louis</strong>, a passionate content creator and social media specialist.
+      </p>
+      <a href="about.html" class="btn">Learn More About Me</a>
+    </div>
+  </section>
 
-<section class="features">
-<div class="feature-card" style="background:#FF5733;">
-<h3>Social Media Trends</h3>
-<p>Viral challenges, short-form videos, AI-generated content, and platform updates.</p>
-<a href="social-media-trends.html" class="btn-small">Explore</a>
-</div>
-<div class="feature-card" style="background:#33C1FF;">
-<h3>Premier League Updates</h3>
-<p>Latest transfers, match fixtures, and club updates from the English Premier League.</p>
-<a href="premier-league.html" class="btn-small">View Updates</a>
-</div>
-<div class="feature-card" style="background:#28a745;">
-<h3>New Afro Songs</h3>
-<p>Stream and download the hottest new Afrobeat songs of 2025.</p>
-<a href="new_afro_songs.html" class="btn-small">Listen Now</a>
-</div>
-<div class="feature-card" style="background:#FFDD33;">
-<h3>Contact Me</h3>
-<p>Have questions or ideas? Send me a message and I’ll get back to you!</p>
-<a href="speak-to-us.html" class="btn-small">Talk to Me</a>
-</div>
-<div class="feature-card" style="background:#9b59b6;">
-<h3>PPSSPP Game Download</h3>
-<p>Download Fight Night Round 3, ZArchiver, and PPSSPP APK with easy instructions.</p>
-<a href="fight-night-round3-download.html" class="btn-small">Download Now</a>
-</div>
-</section>
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="features-container">
+      <div class="feature">
+        <h3>Social Media Trends</h3>
+        <p>Stay updated with the latest viral trends and digital strategies.</p>
+        <a href="social-media-trends.html" class="btn-small">Explore Trends</a>
+      </div>
+      <div class="feature">
+        <h3>Premier League Updates</h3>
+        <p>Get real-time news, match highlights, and league analysis.</p>
+        <a href="premier-league.html" class="btn-small">View Updates</a>
+      </div>
+      <div class="feature">
+        <h3>PPSSPP Game Downloads</h3>
+        <p>Download the latest PPSSPP games safely and quickly.</p>
+        <a href="fight-night-round3-download.html" class="btn-small">Download Now</a>
+      </div>
+    </div>
+  </section>
 
-<!-- Premier League Table Section -->
-<section class="premier-league-section">
-<h2 style="text-align:center; margin-top:30px;">English Premier League Standings</h2>
-<table id="pl-table">
-<thead>
-<tr>
-<th>Pos</th>
-<th>Team</th>
-<th>Pl</th>
-<th>W</th>
-<th>D</th>
-<th>L</th>
-<th>GF</th>
-<th>GA</th>
-<th>GD</th>
-<th>Pts</th>
-<th>Form</th>
-</tr>
-</thead>
-<tbody>
-<tr><td colspan="11">Loading data...</td></tr>
-</tbody>
-</table>
-</section>
-
-<footer>
-<p>© 2025 Louis Lynx | All Rights Reserved</p>
-</footer>
-
-<script>
-async function fetchPLTable() {
-  try {
-    const response = await fetch('pl-data.json'); // Make sure pl-data.json is in same folder
-    const data = await response.json();
-    const tableBody = document.querySelector('#pl-table tbody');
-    tableBody.innerHTML = '';
-
-    data.standings.forEach(team => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${team.position}</td>
-        <td><img class="team-logo" src="${team.team.crestUrl}" alt="${team.team.name}">${team.team.name}</td>
-        <td>${team.playedGames}</td>
-        <td>${team.won}</td>
-        <td>${team.draw}</td>
-        <td>${team.lost}</td>
-        <td>${team.goalsFor}</td>
-        <td>${team.goalsAgainst}</td>
-        <td>${team.goalDifference}</td>
-        <td>${team.points}</td>
-        <td>${team.form}</td>
-      `;
-      tableBody.appendChild(tr);
-    });
-
-  } catch (err) {
-    console.error('Error loading data:', err);
-    document.querySelector('#pl-table tbody').innerHTML = '<tr><td colspan="11">Failed to load data. Try again later.</td></tr>';
-  }
-}
-
-fetchPLTable();
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Louis Lynx",
-  "url": "https://www.louisproug.com/",
-  "sameAs": [
-    "https://www.instagram.com/Louis_lynx1",
-    "https://www.tiktok.com/@louis_lynx1",
-    "https://www.youtube.com/@louisprougandaofficial"
-  ],
-  "jobTitle": "Social Media & Football Content Creator",
-  "image": "https://www.louisproug.com/profile.jpg",
-  "description": "Louis Lynx shares the latest social media trends, Afro music, and English Premier League updates."
-}
-</script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Louis Lynx | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
