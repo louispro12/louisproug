@@ -21,13 +21,12 @@ header {
   background: #111;
   color: #fff;
 }
-h1 {
-  margin: 0;
-}
+h1 { margin: 0; }
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  background: #fff;
 }
 th, td {
   padding: 8px;
@@ -49,9 +48,7 @@ th, td {
   border-radius: 8px;
   transition: background 0.3s;
 }
-.stats-button:hover {
-  background-color: #e04e2f;
-}
+.stats-button:hover { background-color: #e04e2f; }
 .form-badge {
   display: inline-block;
   width: 20px;
@@ -66,6 +63,17 @@ th, td {
 .form-W { background: #28a745; }
 .form-D { background: #ffc107; color: #000; }
 .form-L { background: #dc3545; }
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.loading {
+  text-align: center;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
@@ -94,7 +102,7 @@ th, td {
     </tr>
   </thead>
   <tbody>
-    <tr><td colspan="11">Loading data...</td></tr>
+    <tr><td colspan="11" class="loading">Loading data...</td></tr>
   </tbody>
 </table>
 </main>
@@ -119,10 +127,12 @@ async function fetchPLTable() {
 
       // Form badges
       let formHtml = '';
-      team.form.split('').forEach(f => {
-        const cls = f === 'W' ? 'form-W' : f === 'D' ? 'form-D' : 'form-L';
-        formHtml += `<span class="form-badge ${cls}">${f}</span>`;
-      });
+      if (team.form) {
+        team.form.split('').forEach(f => {
+          const cls = f === 'W' ? 'form-W' : f === 'D' ? 'form-D' : 'form-L';
+          formHtml += `<span class="form-badge ${cls}">${f}</span>`;
+        });
+      }
 
       tr.innerHTML = `
         <td>${team.position}</td>
@@ -135,14 +145,14 @@ async function fetchPLTable() {
         <td>${team.goalsAgainst}</td>
         <td>${team.goalDifference}</td>
         <td>${team.points}</td>
-        <td>${formHtml}</td>
+        <td>${formHtml || '-'}</td>
       `;
       tableBody.appendChild(tr);
     });
 
   } catch(err) {
     console.error(err);
-    document.querySelector("#pl-table tbody").innerHTML = `<tr><td colspan="11">Failed to load data. Try again later.</td></tr>`;
+    document.querySelector("#pl-table tbody").innerHTML = `<tr><td colspan="11">⚠️ Failed to load data. Try again later.</td></tr>`;
   }
 }
 
