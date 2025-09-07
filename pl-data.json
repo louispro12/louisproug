@@ -1,24 +1,52 @@
 {
   "standings": [
-    {"position":1,"team":{"name":"Manchester City","crestUrl":"https://crests.football-data.org/65.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":4,"goalsAgainst":0,"goalDifference":4,"points":3,"form":"W"},
-    {"position":2,"team":{"name":"Sunderland AFC","crestUrl":"https://crests.football-data.org/100.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":3,"goalsAgainst":0,"goalDifference":3,"points":3,"form":"W"},
-    {"position":3,"team":{"name":"Tottenham Hotspur","crestUrl":"https://crests.football-data.org/73.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":3,"goalsAgainst":0,"goalDifference":3,"points":3,"form":"W"},
-    {"position":4,"team":{"name":"Liverpool FC","crestUrl":"https://crests.football-data.org/64.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":4,"goalsAgainst":2,"goalDifference":2,"points":3,"form":"W"},
-    {"position":5,"team":{"name":"Nottingham Forest","crestUrl":"https://crests.football-data.org/351.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":1,"goalsAgainst":0,"goalDifference":1,"points":3,"form":"W"},
-    {"position":6,"team":{"name":"Arsenal FC","crestUrl":"https://crests.football-data.org/57.png"},"playedGames":1,"won":1,"draw":0,"lost":0,"goalsFor":1,"goalsAgainst":0,"goalDifference":1,"points":3,"form":"W"},
-    {"position":7,"team":{"name":"Brighton & Hove Albion","crestUrl":"https://crests.football-data.org/397.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":8,"team":{"name":"Fulham FC","crestUrl":"https://crests.football-data.org/572.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":9,"team":{"name":"Aston Villa","crestUrl":"https://crests.football-data.org/58.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":10,"team":{"name":"Chelsea FC","crestUrl":"https://crests.football-data.org/61.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":11,"team":{"name":"Crystal Palace","crestUrl":"https://crests.football-data.org/354.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":12,"team":{"name":"Newcastle United","crestUrl":"https://crests.football-data.org/67.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":13,"team":{"name":"Everton FC","crestUrl":"https://crests.football-data.org/62.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":14,"team":{"name":"Leeds United","crestUrl":"https://crests.football-data.org/341.png"},"playedGames":1,"won":0,"draw":1,"lost":0,"goalsFor":0,"goalsAgainst":0,"goalDifference":0,"points":1,"form":"D"},
-    {"position":15,"team":{"name":"Manchester United","crestUrl":"https://crests.football-data.org/66.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":1,"goalDifference":-1,"points":0,"form":"L"},
-    {"position":16,"team":{"name":"AFC Bournemouth","crestUrl":"https://crests.football-data.org/1044.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":1,"goalDifference":-1,"points":0,"form":"L"},
-    {"position":17,"team":{"name":"Brentford FC","crestUrl":"https://crests.football-data.org/397.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":1,"goalDifference":-1,"points":0,"form":"L"},
-    {"position":18,"team":{"name":"Burnley FC","crestUrl":"https://crests.football-data.org/328.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":1,"goalDifference":-1,"points":0,"form":"L"},
-    {"position":19,"team":{"name":"West Ham United","crestUrl":"https://crests.football-data.org/563.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":1,"goalDifference":-1,"points":0,"form":"L"},
-    {"position":20,"team":{"name":"Wolverhampton Wanderers","crestUrl":"https://crests.football-data.org/33.png"},"playedGames":1,"won":0,"draw":0,"lost":1,"goalsFor":0,"goalsAgainst":4,"goalDifference":-4,"points":0,"form":"L"}
+    {
+      "position": 1,
+      "team": {
+        "name": "Manchester City",
+        "crestUrl": "images/man-city.png"
+      },
+      "playedGames": 4,
+      "won": 4,
+      "draw": 0,
+      "lost": 0,
+      "goalsFor": 12,
+      "goalsAgainst": 2,
+      "goalDifference": 10,
+      "points": 12,
+      "form": "WWWW"
+    },
+    {
+      "position": 2,
+      "team": {
+        "name": "Arsenal",
+        "crestUrl": "images/arsenal.png"
+      },
+      "playedGames": 4,
+      "won": 3,
+      "draw": 1,
+      "lost": 0,
+      "goalsFor": 9,
+      "goalsAgainst": 3,
+      "goalDifference": 6,
+      "points": 10,
+      "form": "WWDW"
+    },
+    {
+      "position": 3,
+      "team": {
+        "name": "Liverpool",
+        "crestUrl": "images/liverpool.png"
+      },
+      "playedGames": 4,
+      "won": 3,
+      "draw": 0,
+      "lost": 1,
+      "goalsFor": 11,
+      "goalsAgainst": 5,
+      "goalDifference": 6,
+      "points": 9,
+      "form": "LWWW"
+    }
   ]
 }
