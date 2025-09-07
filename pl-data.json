@@ -2,51 +2,143 @@
   "standings": [
     {
       "position": 1,
-      "team": {
-        "name": "Manchester City",
-        "crestUrl": "images/man-city.png"
-      },
-      "playedGames": 4,
-      "won": 4,
-      "draw": 0,
-      "lost": 0,
-      "goalsFor": 12,
-      "goalsAgainst": 2,
-      "goalDifference": 10,
-      "points": 12,
-      "form": "WWWW"
+      "team": { "name": "Manchester City", "crestUrl": "images/man-city.png" },
+      "playedGames": 4, "won": 4, "draw": 0, "lost": 0,
+      "goalsFor": 12, "goalsAgainst": 2, "goalDifference": 10,
+      "points": 12, "form": "WWWW"
     },
     {
       "position": 2,
-      "team": {
-        "name": "Arsenal",
-        "crestUrl": "images/arsenal.png"
-      },
-      "playedGames": 4,
-      "won": 3,
-      "draw": 1,
-      "lost": 0,
-      "goalsFor": 9,
-      "goalsAgainst": 3,
-      "goalDifference": 6,
-      "points": 10,
-      "form": "WWDW"
+      "team": { "name": "Arsenal", "crestUrl": "images/arsenal.png" },
+      "playedGames": 4, "won": 3, "draw": 1, "lost": 0,
+      "goalsFor": 9, "goalsAgainst": 3, "goalDifference": 6,
+      "points": 10, "form": "WWDW"
     },
     {
       "position": 3,
-      "team": {
-        "name": "Liverpool",
-        "crestUrl": "images/liverpool.png"
-      },
-      "playedGames": 4,
-      "won": 3,
-      "draw": 0,
-      "lost": 1,
-      "goalsFor": 11,
-      "goalsAgainst": 5,
-      "goalDifference": 6,
-      "points": 9,
-      "form": "LWWW"
+      "team": { "name": "Liverpool", "crestUrl": "images/liverpool.png" },
+      "playedGames": 4, "won": 3, "draw": 0, "lost": 1,
+      "goalsFor": 11, "goalsAgainst": 5, "goalDifference": 6,
+      "points": 9, "form": "LWWW"
+    },
+    {
+      "position": 4,
+      "team": { "name": "Chelsea", "crestUrl": "images/chelsea.png" },
+      "playedGames": 4, "won": 2, "draw": 1, "lost": 1,
+      "goalsFor": 7, "goalsAgainst": 4, "goalDifference": 3,
+      "points": 7, "form": "WDLW"
+    },
+    {
+      "position": 5,
+      "team": { "name": "Tottenham Hotspur", "crestUrl": "images/spurs.png" },
+      "playedGames": 4, "won": 2, "draw": 1, "lost": 1,
+      "goalsFor": 8, "goalsAgainst": 6, "goalDifference": 2,
+      "points": 7, "form": "DLWW"
+    },
+    {
+      "position": 6,
+      "team": { "name": "Manchester United", "crestUrl": "images/man-united.png" },
+      "playedGames": 4, "won": 2, "draw": 0, "lost": 2,
+      "goalsFor": 6, "goalsAgainst": 6, "goalDifference": 0,
+      "points": 6, "form": "WLWL"
+    },
+    {
+      "position": 7,
+      "team": { "name": "Newcastle United", "crestUrl": "images/newcastle.png" },
+      "playedGames": 4, "won": 2, "draw": 0, "lost": 2,
+      "goalsFor": 9, "goalsAgainst": 8, "goalDifference": 1,
+      "points": 6, "form": "WLWL"
+    },
+    {
+      "position": 8,
+      "team": { "name": "Aston Villa", "crestUrl": "images/aston-villa.png" },
+      "playedGames": 4, "won": 2, "draw": 0, "lost": 2,
+      "goalsFor": 7, "goalsAgainst": 7, "goalDifference": 0,
+      "points": 6, "form": "WWLL"
+    },
+    {
+      "position": 9,
+      "team": { "name": "Brighton", "crestUrl": "images/brighton.png" },
+      "playedGames": 4, "won": 2, "draw": 0, "lost": 2,
+      "goalsFor": 8, "goalsAgainst": 9, "goalDifference": -1,
+      "points": 6, "form": "WLWL"
+    },
+    {
+      "position": 10,
+      "team": { "name": "West Ham United", "crestUrl": "images/west-ham.png" },
+      "playedGames": 4, "won": 1, "draw": 2, "lost": 1,
+      "goalsFor": 5, "goalsAgainst": 5, "goalDifference": 0,
+      "points": 5, "form": "DLWD"
+    },
+    {
+      "position": 11,
+      "team": { "name": "Crystal Palace", "crestUrl": "images/palace.png" },
+      "playedGames": 4, "won": 1, "draw": 2, "lost": 1,
+      "goalsFor": 4, "goalsAgainst": 5, "goalDifference": -1,
+      "points": 5, "form": "WDDL"
+    },
+    {
+      "position": 12,
+      "team": { "name": "Brentford", "crestUrl": "images/brentford.png" },
+      "playedGames": 4, "won": 1, "draw": 2, "lost": 1,
+      "goalsFor": 6, "goalsAgainst": 7, "goalDifference": -1,
+      "points": 5, "form": "DLWD"
+    },
+    {
+      "position": 13,
+      "team": { "name": "Fulham", "crestUrl": "images/fulham.png" },
+      "playedGames": 4, "won": 1, "draw": 1, "lost": 2,
+      "goalsFor": 5, "goalsAgainst": 7, "goalDifference": -2,
+      "points": 4, "form": "LDWL"
+    },
+    {
+      "position": 14,
+      "team": { "name": "Nottingham Forest", "crestUrl": "images/forest.png" },
+      "playedGames": 4, "won": 1, "draw": 1, "lost": 2,
+      "goalsFor": 4, "goalsAgainst": 6, "goalDifference": -2,
+      "points": 4, "form": "WLLD"
+    },
+    {
+      "position": 15,
+      "team": { "name": "Wolverhampton", "crestUrl": "images/wolves.png" },
+      "playedGames": 4, "won": 1, "draw": 0, "lost": 3,
+      "goalsFor": 5, "goalsAgainst": 9, "goalDifference": -4,
+      "points": 3, "form": "LWLL"
+    },
+    {
+      "position": 16,
+      "team": { "name": "Everton", "crestUrl": "images/everton.png" },
+      "playedGames": 4, "won": 0, "draw": 3, "lost": 1,
+      "goalsFor": 3, "goalsAgainst": 5, "goalDifference": -2,
+      "points": 3, "form": "DDLD"
+    },
+    {
+      "position": 17,
+      "team": { "name": "Bournemouth", "crestUrl": "images/bournemouth.png" },
+      "playedGames": 4, "won": 0, "draw": 2, "lost": 2,
+      "goalsFor": 4, "goalsAgainst": 7, "goalDifference": -3,
+      "points": 2, "form": "LDLD"
+    },
+    {
+      "position": 18,
+      "team": { "name": "Sheffield United", "crestUrl": "images/sheffield.png" },
+      "playedGames": 4, "won": 0, "draw": 1, "lost": 3,
+      "goalsFor": 3, "goalsAgainst": 8, "goalDifference": -5,
+      "points": 1, "form": "LLDL"
+    },
+    {
+      "position": 19,
+      "team": { "name": "Southampton", "crestUrl": "images/southampton.png" },
+      "playedGames": 4, "won": 0, "draw": 1, "lost": 3,
+      "goalsFor": 2, "goalsAgainst": 7, "goalDifference": -5,
+      "points": 1, "form": "LDLL"
+    },
+    {
+      "position": 20,
+      "team": { "name": "Leicester City", "crestUrl": "images/leicester.png" },
+      "playedGames": 4, "won": 0, "draw": 0, "lost": 4,
+      "goalsFor": 1, "goalsAgainst": 9, "goalDifference": -8,
+      "points": 0, "form": "LLLL"
     }
   ]
 }
